@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+audio{
+    max-width: 100%;
+}
+#currentP{
+    max-width: 300px;
+    
+}
+#player2{
+    background-color: crimson;
+}
+
+.box2{
+    display: flex;
+    height: 50px;
+}
+.box2 img{
+    width: 50px;
+} 
+table{
+    border: 1px solid black;
+    width: 600px;
+}
+.box img{
+    height: 300px;
+    width: 300px;
+}
+body{
+    display: flex;
+ justify-content: space-between;
+
+}
+.nav{
+display: flex;
+flex-direction: column;
+background-color: black;
+width: 10%;
+height: 100vh;
+}
+.mid,.side{
+    width: 85%;
+    height: 100vh;
+    border: 1px solid black;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td{
+    height: 10px;
+}
+th{
+    height: 10px;
+    display: inline;
+}
+.form{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    width: 100%;
+}
+.bg:hover{
+    background-color: aqua;
+}
+.active{
+    background-color: aqua;
+}
+.pause::before{
+    
+    content: "Pause";
+}
+.play::before{
+    content: "Play";
+}
+/* #previousP3{
+    display:none;
+}
+#previousP2{
+    display:none;  
+}
+#previousP{
+    display: none;
+} */

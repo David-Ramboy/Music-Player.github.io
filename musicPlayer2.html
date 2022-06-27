@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="musicPlayer.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Trend</a>
+        <a href="#">Settings</a>
+    </div>
+    <div class="mid">
+    <div id="currentP">
+        <div class="box">
+            <img id="imgTitle1" src="/images/yoku.webp">
+            <p class="parag">YOKU by Eve</p>
+        </div>
+        <audio id="play" controls >
+            <source  id="player1" src="/musics/YOKU-Eve.mp3">
+        </audio>
+        <button id="next" type="button">next</button>
+        <button id="start-pause"></button>
+        <button id="back">back</button>
+    </div>
+</div>
+    <div class="side">
+        <div class="container-side">
+            <div class="form">
+                <p>title</p>
+                <input type="text" search>
+            </div>
+            <table id="table">
+                <!-- <tr id="row">
+                    <td>
+                        <button id="target">
+                            <div id="previousP">
+                                <div class="box2">
+                                    <img id="imgTitle2" src="/images/lightswitch.png">
+                                    <p class="parag">Light Switch by Charlie puth</p>
+                                </div>                    
+                                <audio id="play2">
+                                    <source id="player2" src="/musics/LightSwitch.mp3">     
+                                </audio>
+                            </div>
+                        </button>
+                    </td>
+                </tr> -->
+            </table>
+        </div>
+    </div>
+
+    <!-- <script src="musicP.js"></script> -->
+    <script src="musicPlayer2.js"></script>
+
+
+</body>
+</html>
