@@ -30,6 +30,7 @@ const playerImg = document.getElementById("imgTitle1");
 const playerSong = document.getElementById("player1");
 let playerTitle = document.getElementsByClassName("parag");
 
+const currentP = document.getElementById("currentP");
 
 playerTitle = playerTitle[0];
 const tableEl = document.getElementsByTagName("table")
@@ -94,9 +95,14 @@ window.addEventListener("DOMContentLoaded",function(){
         })
        
         tableEl[0].appendChild(musicP) 
+
+
        
     }
  
+    
+    
+    
 })
 // UI of on play musics
 function showMusic(item){
