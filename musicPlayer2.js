@@ -35,6 +35,8 @@ const currentP = document.getElementById("currentP");
 playerTitle = playerTitle[0];
 const tableEl = document.getElementsByTagName("table")
 
+const musicSearch = [];
+
 // Item number of musics
 let currentItem = 0;
 window.addEventListener("DOMContentLoaded",function(){  
@@ -84,7 +86,6 @@ window.addEventListener("DOMContentLoaded",function(){
             playerSong.src = item.song
             playerTitle.textContent = item.title
             document.getElementById("play").load();
-            document.getElementById("play").play();
             var elements = document.querySelectorAll("#row")
             for(i = 0; i < musics.length; i++){
                 elements[i].classList.remove("active")
@@ -93,13 +94,40 @@ window.addEventListener("DOMContentLoaded",function(){
             musicP.classList.add("active")
 
         })
-       
+
+        musicSearch.push({element: musicP, title: item.title});
+
         tableEl[0].appendChild(musicP) 
 
 
        
     }
- 
+    let search = document.querySelector(".search-bar");
+    search.addEventListener('input', (e) => {
+        let searchBarValue = e.target.value
+
+        let row = document.querySelectorAll('#row')
+
+       
+
+        if(searchBarValue.length === 0){
+            console.log(true);
+            row.forEach((row) => {
+                row.classList.remove('Hide')
+            })
+          
+        }else {
+            row.forEach((row) => {
+                row.classList.add('Hide')
+            })
+        }
+
+        musicSearch.forEach(user => {
+            if(user.title.includes(searchBarValue)){
+               user.element.classList.remove('Hide');
+            }
+        })
+    })
     
     
     
@@ -153,4 +181,6 @@ let trEl = document.createElement("tr"),
  
     return docFang.appendChild(trEl);
 }
+
+
 

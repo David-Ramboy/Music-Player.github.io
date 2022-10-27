@@ -10,7 +10,7 @@
 <body>
     <div class="nav">
         <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="./Components/About.html">About</a>
         <a href="#">Trend</a>
         <a href="#">Settings</a>
     </div>
@@ -23,16 +23,18 @@
         <audio id="play" controls >
             <source  id="player1" src="/musics/YOKU-Eve.mp3">
         </audio>
-        <button id="next" type="button">next</button>
-        <button id="start-pause"></button>
-        <button id="back">back</button>
+        <div class="player--btn">
+            <img src="./images/Icons/next-one.png" id="next" alt="previous" />
+            <div id="start-pause"></div>
+            <img src="./images/Icons/next-one.png" id="back" alt="next"/>
+        </div>
     </div>
 </div>
     <div class="side">
         <div class="container-side">
             <div class="form">
                 <p>title</p>
-                <input type="text" search>
+                <input type="text" class="search-bar">
             </div>
             <table id="table">
                 <!-- <tr id="row">

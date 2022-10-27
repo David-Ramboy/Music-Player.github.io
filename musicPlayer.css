@@ -76,13 +76,18 @@ button{
 .active{
     background-color: aqua;
 }
-.pause::before{
-    
-    content: "Pause";
+
+.pause{
+    background-image: url("./images/Icons/pause.png");
+    background-size: cover;
 }
-.play::before{
-    content: "Play";
+
+.play{
+    background-image: url("./images/Icons/play.png");
+    background-size: cover;
 }
+
+
 #currentP > audio{
     width: 99.9%;
     outline: none;
@@ -94,6 +99,37 @@ button{
 
 #currentP > audio::-webkit-media-controls-enclosure{
 background: none;
+}
+
+.player--btn{
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+}
+
+.player--btn > img{
+    width: 30px;
+}
+
+.player--btn > :nth-child(2){
+    margin: 0px 10px 0px 10px;
+}
+
+.player--btn > :nth-child(1){
+    transform: scaleX(-1);
+    margin-right: 4px;
+}
+
+.parag{
+    font-weight: bold;
+}
+#start-pause{
+    width: 30px;
+    border: 1px solid black;
+}
+.Hide{
+    display: none;
 }
 /* #previousP3{
     display:none;
