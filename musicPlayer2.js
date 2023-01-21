@@ -1,7 +1,7 @@
 const musics = [
     {
         id: 0,
-        image: "images/adie-paraluman.jpg", 
+        image: "images/Adie-paraluman.jpg", 
         title: "Paraluman By Adie",
         song: "musics/adie-paraluman.mp3"
     },
